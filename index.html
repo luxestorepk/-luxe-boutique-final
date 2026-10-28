@@ -3,33 +3,55 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>LUXE BOUTIQUE - FINAL</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+<title>Luxe Boutique - Premium Collection</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-*{margin:0;padding:0;box-sizing:border-box}body{background:#070707;color:#fff;font-family:Arial}
-.header{background:#000;padding:14px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #1a1a1a;position:sticky;top:0}
-.logo{font-family:'Cinzel';letter-spacing:3px;font-size:18px;font-weight:700}.logo b{color:#d4af37}
-.hero{height:10vh;display:flex;align-items:center;justify-content:center;text-align:center;background:#070707}
-.hero p{color:#d4af37;letter-spacing:4px;font-size:9px;font-family:'Cinzel'}.hero h1{font-family:'Cinzel';font-size:24px}
-.products{padding:16px 3%;display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-.card{background:#111;border:1px solid #1e1e1e;border-radius:8px;overflow:hidden}
-.card img{width:100%;height:250px;object-fit:cover;background:#222;display:block}
-.card-body{padding:10px}.card-body h3{font-family:'Cinzel';font-size:10px}.price{color:#d4af37;font-size:11px;font-weight:700;display:block;margin:6px 0}
-.order-btn{background:#d4af37;color:#000;width:100%;padding:9px;font-size:8px;font-weight:700;display:block;text-align:center;text-decoration:none;border-radius:4px;font-family:'Cinzel'}
-.footer{text-align:center;padding:20px;color:#444;font-size:7px;border-top:1px solid #111;margin-top:10px}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Poppins',sans-serif;background:#0a0a0a;color:#fff}
+h1,h2,h3{font-family:'Playfair Display',serif}
+.hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('abaya.jpg');background-size:cover;background-position:center;height:85vh;display:flex;align-items:center;justify-content:center;text-align:center}
+.hero h1{font-size:3.5rem;letter-spacing:2px}
+.hero p{font-size:1.1rem;color:#d4af37;margin:15px 0}
+.btn{background:#d4af37;color:#000;padding:12px 30px;border:none;font-weight:600;cursor:pointer;letter-spacing:1px}
+.container{max-width:1200px;margin:0 auto;padding:60px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:40px}
+.card{background:#111;border:1px solid #222;overflow:hidden;transition:0.3s}
+.card:hover{transform:translateY(-8px);border-color:#d4af37}
+.card img{width:100%;height:420px;object-fit:cover}
+.card-info{padding:18px}
+.price{font-weight:600}
+.collection-title{text-align:center;font-size:2.5rem}
+.collection-sub{text-align:center;color:#888}
+#chat-toggle{position:fixed;bottom:25px;right:25px;width:60px;height:60px;background:#d4af37;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:9999;font-size:28px}
+#chat-box{position:fixed;bottom:100px;right:25px;width:360px;max-width:90vw;height:480px;background:#111;border:1px solid #333;border-radius:16px;display:none;flex-direction:column;z-index:9999;overflow:hidden}
+#chat-header{background:#d4af37;color:#000;padding:14px 18px;font-weight:700;display:flex;justify-content:space-between}
+#chat-messages{flex:1;padding:15px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;background:#0a0a0a}
+.msg{padding:10px 14px;border-radius:18px;max-width:80%;font-size:14px}
+.user{background:#d4af37;color:#000;align-self:flex-end}
+.bot{background:#222;color:#fff;align-self:flex-start;border:1px solid #333}
+#chat-input{display:flex;border-top:1px solid #333}
+#chat-input input{flex:1;background:#111;border:none;color:#fff;padding:14px;outline:none}
+#chat-input button{background:#d4af37;border:none;padding:0 18px;cursor:pointer;font-weight:700}
 </style>
 </head>
 <body>
-<div class="header"><div class="logo"><b>LUXE</b> BOUTIQUE</div></div>
-<div class="hero"><div><p>NEW ARRIVALS 2026</p><h1>Collection 2026</h1></div></div>
-<div class="products">
-<div class="card"><img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=600&q=80&auto=format&fit=crop" alt="Abaya"><div class="card-body"><h3>Noir Velvet Abaya</h3><b class="price">Rs. 8,500</b><a class="order-btn" href="https://wa.me/923716649231">ORDER ON WHATSAPP</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?w=600&q=80&auto=format&fit=crop" alt="Lehenga"><div class="card-body"><h3>Golden Bridal Lehenga</h3><b class="price">Rs. 24,500</b><a class="order-btn" href="https://wa.me/923716649231">ORDER ON WHATSAPP</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1609354580875-87ad4c4902e6?w=600&q=80&auto=format&fit=crop" alt="Saree"><div class="card-body"><h3>Beige Silk Saree</h3><b class="price">Rs. 12,900</b><a class="order-btn" href="https://wa.me/923716649231">ORDER ON WHATSAPP</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1566174053879-31528523f8ae?w=600&q=80&auto=format&fit=crop" alt="Gown"><div class="card-body"><h3>Midnight Black Gown</h3><b class="price">Rs. 18,000</b><a class="order-btn" href="https://wa.me/923716649231">ORDER ON WHATSAPP</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&q=80&auto=format&fit=crop" alt="Gold"><div class="card-body"><h3>Royal Gold Ensemble</h3><b class="price">Rs. 15,500</b><a class="order-btn" href="https://wa.me/923716649231">ORDER ON WHATSAPP</a></div></div>
-<div class="card"><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80&auto=format&fit=crop" alt="Kurta"><div class="card-body"><h3>Champagne Kurta Set</h3><b class="price">Rs. 6,900</b><a class="order-btn" href="https://wa.me/923716649231">ORDER ON WHATSAPP</a></div></div>
-</div>
-<div class="footer">LUXE BOUTIQUE © 2026 - waqas7283.github.io/luxe-boutique-basic - 03716649231</div>
+<div class="hero"><div><h1>LUXE BOUTIQUE</h1><p>Where Elegance Meets Royalty</p><button class="btn" onclick="document.getElementById('collection').scrollIntoView({behavior:'smooth'})">EXPLORE COLLECTION</button></div></div>
+<div class="container" id="collection"><h2 class="collection-title">Premium Collection</h2><p class="collection-sub">6 Exclusive Handcrafted Pieces</p>
+<div class="grid">
+<div class="card"><img src="abaya.jpg" alt="Black Abaya"><div class="card-info"><h3>Black Royal Abaya</h3><p>Modest Luxury</p><div class="price">Rs. 18,500</div></div></div>
+<div class="card"><img src="lehenga.jpg" alt="Golden Lehenga"><div class="card-info"><h3>Golden Bridal Lehenga</h3><p>Bridal Special</p><div class="price">Rs. 65,000</div></div></div>
+<div class="card"><img src="saree.jpg" alt="Beige Saree"><div class="card-info"><h3>Beige Silk Saree</h3><p>Timeless Grace</p><div class="price">Rs. 22,000</div></div></div>
+<div class="card"><img src="gown.jpg" alt="Black Gown"><div class="card-info"><h3>Midnight Black Gown</h3><p>Evening Glamour</p><div class="price">Rs. 28,500</div></div></div>
+<div class="card"><img src="gold.jpg" alt="Royal Gold"><div class="card-info"><h3>Royal Gold Ensemble</h3><p>Shahi Collection</p><div class="price">Rs. 75,000</div></div></div>
+<div class="card"><img src="kurta.jpg" alt="Champagne Kurta"><div class="card-info"><h3>Champagne Kurta Set</h3><p>Festive Elegance</p><div class="price">Rs. 16,500</div></div></div>
+</div></div>
+<div id="chat-toggle" onclick="toggleChat()">💬</div>
+<div id="chat-box"><div id="chat-header"><span>Luxe AI Assistant ✨</span><span style="cursor:pointer" onclick="toggleChat()">✕</span></div><div id="chat-messages"><div class="msg bot">Assalam-o-Alaikum! Main Luxe Boutique ki AI assistant hun. Kisi bhi dress ka size, price, delivery ya material ke baare me poochein, main foran jawab dungi! 👗</div></div><div id="chat-input"><input id="userInput" placeholder="Apna sawal likhein..." onkeypress="if(event.key==='Enter') sendMsg()"><button onclick="sendMsg()">➤</button></div></div>
+<script>
+function toggleChat(){const box=document.getElementById('chat-box');box.style.display=box.style.display==='flex'?'none':'flex';}
+const replies={"abaya":"Black Royal Abaya Rs.18,500 me hai, premium georgette with gold embroidery, S to XXL sizes available.","lehenga":"Golden Bridal Lehenga Rs.65,000 - pure bridal wear, heavy zari work, customized stitching available.","saree":"Beige Silk Saree Rs.22,000 - pure silk with subtle embroidery, wedding & party wear ke liye perfect.","gown":"Midnight Black Gown Rs.28,500 - velvet & lace evening gown, party aur formal events ke liye best.","gold":"Royal Gold Ensemble Rs.75,000 - hamara sab se shahi collection, hand embroidered with pearls.","kurta":"Champagne Kurta Set Rs.16,500 - festive kurta with trousers, daily & Eid wear.","price":"Hamari prices Rs.16,500 se Rs.75,000 tak hain. Har dress premium quality ki hai.","delivery":"Pakistan bhar me 3-4 din me delivery. Karachi me same day. Cash on Delivery available.","size":"S, M, L, XL, XXL sab sizes available. Custom size bhi ban jayega.","material":"Silk, Velvet, Georgette, Net - sab premium imported fabrics hain.","contact":"WhatsApp: 03XX-XXXXXXX | Instagram: @luxe.boutique | Email: luxe@gmail.com","default":"JazakAllah sawal ka! Hamari 6 premium dresses available hain: Abaya, Lehenga, Saree, Gown, Gold Ensemble, Kurta Set. Kisi specific dress ke baare me poochein!"};
+function getBotReply(q){q=q.toLowerCase();for(let k in replies){if(q.includes(k)) return replies[k];}if(q.includes("salam")||q.includes("hello")||q.includes("hi")) return "Walaikum Salam! Luxe Boutique me khush amdeed! Kaise madad kar sakti hun? 😊";if(q.includes("kitne")||q.includes("price")||q.includes("rate")) return replies.price;if(q.includes("deliver")||q.includes("cod")) return replies.delivery;if(q.includes("size")) return replies.size;if(q.includes("kapra")||q.includes("fabric")) return replies.material;return replies.default;}
+function sendMsg(){const input=document.getElementById('userInput');const text=input.value.trim();if(!text) return;const msgs=document.getElementById('chat-messages');msgs.innerHTML+=`<div class="msg user">${text}</div>`;input.value='';setTimeout(()=>{const reply=getBotReply(text);msgs.innerHTML+=`<div class="msg bot">${reply}</div>`;msgs.scrollTop=msgs.scrollHeight;},600);msgs.scrollTop=msgs.scrollHeight;}
+</script>
 </body>
-  </html>
+</html>
