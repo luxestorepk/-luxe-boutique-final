@@ -3,55 +3,251 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Luxe Boutique - Premium Collection</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+<title>LUXE BOUTIQUE - AI Store | COD 03716649231</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Poppins',sans-serif;background:#0a0a0a;color:#fff}
+body{font-family:'Inter',sans-serif;background:#fdfbf7;color:#111}
 h1,h2,h3{font-family:'Playfair Display',serif}
-.hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),url('abaya.jpg');background-size:cover;background-position:center;height:85vh;display:flex;align-items:center;justify-content:center;text-align:center}
-.hero h1{font-size:3.5rem;letter-spacing:2px}
-.hero p{font-size:1.1rem;color:#d4af37;margin:15px 0}
-.btn{background:#d4af37;color:#000;padding:12px 30px;border:none;font-weight:600;cursor:pointer;letter-spacing:1px}
-.container{max-width:1200px;margin:0 auto;padding:60px 20px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px;margin-top:40px}
-.card{background:#111;border:1px solid #222;overflow:hidden;transition:0.3s}
-.card:hover{transform:translateY(-8px);border-color:#d4af37}
-.card img{width:100%;height:420px;object-fit:cover}
-.card-info{padding:18px}
-.price{font-weight:600}
-.collection-title{text-align:center;font-size:2.5rem}
-.collection-sub{text-align:center;color:#888}
-#chat-toggle{position:fixed;bottom:25px;right:25px;width:60px;height:60px;background:#d4af37;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:9999;font-size:28px}
-#chat-box{position:fixed;bottom:100px;right:25px;width:360px;max-width:90vw;height:480px;background:#111;border:1px solid #333;border-radius:16px;display:none;flex-direction:column;z-index:9999;overflow:hidden}
-#chat-header{background:#d4af37;color:#000;padding:14px 18px;font-weight:700;display:flex;justify-content:space-between}
-#chat-messages{flex:1;padding:15px;overflow-y:auto;display:flex;flex-direction:column;gap:10px;background:#0a0a0a}
-.msg{padding:10px 14px;border-radius:18px;max-width:80%;font-size:14px}
-.user{background:#d4af37;color:#000;align-self:flex-end}
-.bot{background:#222;color:#fff;align-self:flex-start;border:1px solid #333}
-#chat-input{display:flex;border-top:1px solid #333}
-#chat-input input{flex:1;background:#111;border:none;color:#fff;padding:14px;outline:none}
-#chat-input button{background:#d4af37;border:none;padding:0 18px;cursor:pointer;font-weight:700}
+.announcement{background:#000;color:#fff;text-align:center;padding:12px;font-size:13px;letter-spacing:1px;position:sticky;top:0;z-index:999}
+.announcement span{color:#d4af37;font-weight:700}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:18px 5%;background:#fff;border-bottom:1px solid #eee}
+.logo{font-size:26px;font-weight:700;letter-spacing:3px}
+.logo span{color:#d4af37}
+.hero{padding:50px 5%;background:linear-gradient(135deg,#fff8f0,#f5e6d3);display:flex;gap:30px;align-items:center}
+.hero-text{flex:1}
+.hero-text h1{font-size:54px;line-height:1.1;margin-bottom:20px}
+.hero-text h1 em{color:#d4af37;font-style:italic}
+.btn{padding:16px 32px;background:#000;color:#fff;text-decoration:none;display:inline-block;font-size:13px;letter-spacing:1.5px;margin-right:10px}
+.btn-gold{background:#d4af37;color:#000}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:35px}
+.card{background:#fff;border:1px solid #f0e6d8;transition:0.4s}
+.card:hover{transform:translateY(-10px);box-shadow:0 20px 40px rgba(0,0,0,0.1)}
+.card-img{height:520px;overflow:hidden;position:relative;background:#f9f1e8}
+.card-img img{width:100%;height:100%;object-fit:cover;object-position:top}
+.badge{position:absolute;top:15px;left:15px;background:#000;color:#fff;padding:6px 12px;font-size:11px}
+.price-row{display:flex;justify-content:space-between;align-items:center;margin:12px 0}
+.price{font-weight:700;font-size:20px}
+.price s{color:#aaa;font-size:14px;margin-left:6px;font-weight:400}
+.cod{font-size:12px;color:#d4af37;font-weight:700;margin-bottom:14px}
+.card-body{padding:20px}
+.actions{display:flex;gap:10px}
+.actions a{flex:1;text-align:center;padding:13px 5px;font-size:11px;text-decoration:none;border:1px solid #000;letter-spacing:1px;font-weight:600}
+.add{background:#fff;color:#000}
+.buy{background:#000;color:#fff}
+.trust{display:grid;grid-template-columns:repeat(4,1fr);background:#000;color:#fff;padding:40px 5%;text-align:center;gap:20px}
+.trust h4{color:#d4af37;margin-bottom:6px}
+.footer{padding:60px 5%;text-align:center;background:#f9f1e8}
+.float-wa{position:fixed;bottom:22px;right:22px;background:#25D366;color:#fff;padding:16px 22px;border-radius:50px;text-decoration:none;font-weight:700;z-index:9999;box-shadow:0 8px 25px rgba(37,211,102,0.5);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(37,211,102,0.7)}70%{box-shadow:0 0 0 18px rgba(37,211,102,0)}100%{box-shadow:0 0 0 0 rgba(37,211,102,0)}}
+
+/* AI CHAT BOT */
+#ai-btn{position:fixed;bottom:22px;left:22px;background:#000;color:#fff;padding:16px 22px;border-radius:50px;font-weight:700;z-index:9999;cursor:pointer;box-shadow:0 8px 25px rgba(0,0,0,0.3);border:2px solid #d4af37}
+#ai-box{position:fixed;bottom:90px;left:22px;width:350px;max-width:90vw;height:450px;background:#fff;border:1px solid #ddd;box-shadow:0 15px 40px rgba(0,0,0,0.2);z-index:9999;display:none;flex-direction:column;border-radius:15px;overflow:hidden}
+#ai-header{background:#000;color:#fff;padding:15px;display:flex;justify-content:space-between;align-items:center}
+#ai-header span{color:#d4af37}
+#ai-messages{flex:1;padding:15px;overflow-y:auto;background:#fdfbf7}
+.msg{margin-bottom:12px;padding:10px 14px;border-radius:12px;font-size:13px;line-height:1.4;max-width:85%}
+.bot{background:#f0e6d8;color:#111}
+.user{background:#000;color:#fff;margin-left:auto}
+#ai-input{display:flex;padding:10px;border-top:1px solid #eee;background:#fff}
+#ai-input input{flex:1;padding:12px;border:1px solid #ddd;border-radius:25px;outline:none;font-size:13px}
+#ai-input button{margin-left:8px;padding:10px 16px;background:#000;color:#fff;border:none;border-radius:25px;cursor:pointer}
+.ai-quick{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.ai-quick span{background:#fff;border:1px solid #d4af37;padding:6px 10px;border-radius:20px;font-size:11px;cursor:pointer}
+@media(max-width:768px){#ai-box{left:5%;width:90%}.hero{flex-direction:column}.trust{grid-template-columns:1fr 1fr}}
 </style>
 </head>
 <body>
-<div class="hero"><div><h1>LUXE BOUTIQUE</h1><p>Where Elegance Meets Royalty</p><button class="btn" onclick="document.getElementById('collection').scrollIntoView({behavior:'smooth'})">EXPLORE COLLECTION</button></div></div>
-<div class="container" id="collection"><h2 class="collection-title">Premium Collection</h2><p class="collection-sub">6 Exclusive Handcrafted Pieces</p>
+
+<div class="announcement">🚚 <span>FREE DELIVERY</span> ALL PAKISTAN | <span>CASH ON DELIVERY</span> | AI SUPPORT + ORDER: <span>03716649231</span></div>
+
+<div class="nav">
+<div class="logo">LUXE <span>BOUTIQUE</span></div>
+<div>📞 03716649231 | 🤖 AI Live</div>
+</div>
+
+<div class="hero">
+<div class="hero-text">
+<h1>Premium<br><em>Luxury Collection</em><br>With AI Support</h1>
+<p style="color:#666;line-height:1.6;margin-bottom:25px;font-size:17px">6 Exclusive Designs - AI Chat Bot aapki madad ke liye hazir hai. Price, Size, COD - kuch bhi pucho. Direct WhatsApp Order 03716649231</p>
+<a href="#collection" class="btn btn-gold">SHOP NOW - COD + FREE DELIVERY</a>
+<a href="https://wa.me/923716649231?text=Salam!%20Luxe%20Boutique%20Collection%20Dekhni%20Hai" class="btn">WHATSAPP: 03716649231</a>
+<p style="margin-top:20px;font-size:12px;color:#8b7355">✅ 1000+ Happy Customers | 🤖 AI Assistant Available 24/7 | 🚚 COD All Pakistan</p>
+</div>
+<div style="flex:1"><img src="kurta.jpg" style="width:100%;height:500px;object-fit:cover;border:12px solid #fff;box-shadow:0 20px 40px rgba(0,0,0,0.15)"></div>
+</div>
+
+<section style="padding:70px 5%" id="collection">
+<div style="text-align:center;margin-bottom:50px">
+<h2 style="font-size:42px">Our Exclusive Collection - AI Assisted</h2>
+<p style="color:#888;margin-top:10px">COD + FREE DELIVERY + AI Chat Bot - Call: 03716649231</p>
+</div>
+
 <div class="grid">
-<div class="card"><img src="abaya.jpg" alt="Black Abaya"><div class="card-info"><h3>Black Royal Abaya</h3><p>Modest Luxury</p><div class="price">Rs. 18,500</div></div></div>
-<div class="card"><img src="lehenga.jpg" alt="Golden Lehenga"><div class="card-info"><h3>Golden Bridal Lehenga</h3><p>Bridal Special</p><div class="price">Rs. 65,000</div></div></div>
-<div class="card"><img src="saree.jpg" alt="Beige Saree"><div class="card-info"><h3>Beige Silk Saree</h3><p>Timeless Grace</p><div class="price">Rs. 22,000</div></div></div>
-<div class="card"><img src="gown.jpg" alt="Black Gown"><div class="card-info"><h3>Midnight Black Gown</h3><p>Evening Glamour</p><div class="price">Rs. 28,500</div></div></div>
-<div class="card"><img src="gold.jpg" alt="Royal Gold"><div class="card-info"><h3>Royal Gold Ensemble</h3><p>Shahi Collection</p><div class="price">Rs. 75,000</div></div></div>
-<div class="card"><img src="kurta.jpg" alt="Champagne Kurta"><div class="card-info"><h3>Champagne Kurta Set</h3><p>Festive Elegance</p><div class="price">Rs. 16,500</div></div></div>
-</div></div>
-<div id="chat-toggle" onclick="toggleChat()">💬</div>
-<div id="chat-box"><div id="chat-header"><span>Luxe AI Assistant ✨</span><span style="cursor:pointer" onclick="toggleChat()">✕</span></div><div id="chat-messages"><div class="msg bot">Assalam-o-Alaikum! Main Luxe Boutique ki AI assistant hun. Kisi bhi dress ka size, price, delivery ya material ke baare me poochein, main foran jawab dungi! 👗</div></div><div id="chat-input"><input id="userInput" placeholder="Apna sawal likhein..." onkeypress="if(event.key==='Enter') sendMsg()"><button onclick="sendMsg()">➤</button></div></div>
+<!-- KURTA -->
+<div class="card">
+<div class="card-img"><span class="badge">BEST SELLER</span><img src="kurta.jpg" alt="Kurta"></div>
+<div class="card-body">
+<h3>Royal Beige Embroidered Kurta - 2PC</h3>
+<div class="price-row"><div class="price">Rs. 3,499 <s>Rs. 6,000</s></div><div style="font-size:11px;background:#ffe5e5;padding:4px 8px">40% OFF + COD</div></div>
+<div class="cod">🚚 FREE DELIVERY | 💵 CASH ON DELIVERY | 📞 03716649231</div>
+<div class="actions">
+<a class="add" href="https://wa.me/923716649231?text=Salam!%20Kurta%20Chahiye%20Rs.3499%20COD">ADD TO CART</a>
+<a class="buy" href="https://wa.me/923716649231?text=Salam!%20Royal%20Beige%20Kurta%20Order%20Rs.3499%20COD%20-%20kurta.jpg">BUY ON WHATSAPP</a>
+</div>
+</div>
+</div>
+<!-- GOLD -->
+<div class="card">
+<div class="card-img"><span class="badge" style="background:#d4af37;color:#000">WEDDING SPECIAL + COD</span><img src="gold.jpg" alt="Gold"></div>
+<div class="card-body">
+<h3>Gold Royal Sherwani - Groom</h3>
+<div class="price-row"><div class="price">Rs. 12,500 <s>Rs. 20,000</s></div><div style="font-size:11px;background:#fff3cd;padding:4px 8px">FREE DELIVERY</div></div>
+<div class="cod">🚚 FREE DELIVERY | 💵 CASH ON DELIVERY | 📞 03716649231</div>
+<div class="actions">
+<a class="add" href="https://wa.me/923716649231?text=Gold%20Sherwani%20Chahiye%20Rs.12500%20COD">ADD TO CART</a>
+<a class="buy" href="https://wa.me/923716649231?text=Gold%20Sherwani%20Order%20Rs.12500%20COD%20-%20gold.jpg">BUY ON WHATSAPP</a>
+</div>
+</div>
+</div>
+<!-- GOWN -->
+<div class="card">
+<div class="card-img"><span class="badge">PARTY WEAR + FREE DELIVERY</span><img src="gown.jpg" alt="Gown"></div>
+<div class="card-body">
+<h3>Black Velvet Evening Gown</h3>
+<div class="price-row"><div class="price">Rs. 5,999 <s>Rs. 9,500</s></div><div style="font-size:11px;background:#ffe5e5;padding:4px 8px">COD AVAILABLE</div></div>
+<div class="cod">🚚 FREE DELIVERY | 💵 CASH ON DELIVERY | 📞 03716649231</div>
+<div class="actions">
+<a class="add" href="https://wa.me/923716649231?text=Black%20Gown%20Chahiye%20Rs.5999%20COD">ADD TO CART</a>
+<a class="buy" href="https://wa.me/923716649231?text=Black%20Gown%20Order%20Rs.5999%20COD%20-%20gown.jpg">BUY ON WHATSAPP</a>
+</div>
+</div>
+</div>
+<!-- SAREE -->
+<div class="card">
+<div class="card-img"><span class="badge" style="background:#fff;color:#000;border:1px solid #000">FREE DELIVERY</span><img src="saree.jpg" alt="Saree"></div>
+<div class="card-body">
+<h3>Cream Silk Luxury Saree</h3>
+<div class="price-row"><div class="price">Rs. 4,499 <s>Rs. 7,500</s></div><div style="font-size:11px;background:#e8f5e9;padding:4px 8px">COD + FREE</div></div>
+<div class="cod">🚚 FREE DELIVERY | 💵 CASH ON DELIVERY | 📞 03716649231</div>
+<div class="actions">
+<a class="add" href="https://wa.me/923716649231?text=Cream%20Saree%20Chahiye%20Rs.4499%20COD">ADD TO CART</a>
+<a class="buy" href="https://wa.me/923716649231?text=Cream%20Saree%20Order%20Rs.4499%20COD%20-%20saree.jpg">BUY ON WHATSAPP</a>
+</div>
+</div>
+</div>
+<!-- LEHENGA -->
+<div class="card">
+<div class="card-img"><span class="badge" style="background:#c0392b">BRIDAL + COD</span><img src="lehenga.jpg" alt="Lehenga"></div>
+<div class="card-body">
+<h3>Golden Bridal Lehenga - Heavy Work</h3>
+<div class="price-row"><div class="price">Rs. 18,500 <s>Rs. 30,000</s></div><div style="font-size:11px;background:#c0392b;color:#fff;padding:4px 8px">FREE DELIVERY</div></div>
+<div class="cod">🚚 FREE DELIVERY | 💵 CASH ON DELIVERY | 📞 03716649231</div>
+<div class="actions">
+<a class="add" href="https://wa.me/923716649231?text=Golden%20Lehenga%20Chahiye%20Rs.18500%20COD">ADD TO CART</a>
+<a class="buy" href="https://wa.me/923716649231?text=Golden%20Lehenga%20Order%20Rs.18500%20COD%20-%20lehenga.jpg">BUY ON WHATSAPP</a>
+</div>
+</div>
+</div>
+<!-- ABAYA -->
+<div class="card">
+<div class="card-img"><span class="badge">MODEST WEAR - COD FREE</span><img src="abaya.jpg" alt="Abaya"></div>
+<div class="card-body">
+<h3>Black Velvet Abaya - Gold Work</h3>
+<div class="price-row"><div class="price">Rs. 4,999 <s>Rs. 8,000</s></div><div style="font-size:11px;background:#000;color:#fff;padding:4px 8px">FREE DELIVERY + COD</div></div>
+<div class="cod">🚚 FREE DELIVERY | 💵 CASH ON DELIVERY | 📞 03716649231</div>
+<div class="actions">
+<a class="add" href="https://wa.me/923716649231?text=Black%20Abaya%20Chahiye%20Rs.4999%20COD">ADD TO CART</a>
+<a class="buy" href="https://wa.me/923716649231?text=Black%20Abaya%20Order%20Rs.4999%20COD%20-%20abaya.jpg">BUY ON WHATSAPP</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<div class="trust">
+<div><h4>🚚 FREE DELIVERY</h4><p>All Pakistan - COD Available<br>Call: 03716649231</p></div>
+<div><h4>💵 CASH ON DELIVERY</h4><p>Pay on Delivery - 100% Safe<br>WhatsApp: 03716649231</p></div>
+<div><h4>🤖 AI CHAT SUPPORT</h4><p>24/7 AI Assistant - Ask Anything<br>Price, Size, Delivery</p></div>
+<div><h4>↩️ 7 DAYS RETURN + TRUST</h4><p>1000+ Customers - 4.9/5 Rating<br>Trusted Store Lahore</p></div>
+</div>
+
+<div class="footer">
+<h2 style="font-size:34px;margin-bottom:15px">LUXE BOUTIQUE - AI POWERED</h2>
+<p>Premium Wedding & Party Wear | AI Chat Bot + COD + Free Delivery<br>WhatsApp / Call: <b>03716649231</b> | Lahore, Pakistan<br><br>© 2026 Luxe Boutique - AI Powered Store - All Rights Reserved</p>
+<br><br>
+<div style="background:#000;color:#fff;padding:30px;border-radius:15px;max-width:600px;margin:0 auto">
+<h3 style="color:#d4af37;margin-bottom:10px">🚀 APNI AI WEBSITE BANWAIN - Rs.5000</h3>
+<p style="font-size:13px;color:#ccc;margin-bottom:15px">Is tarah ki AI wali website apni shop ke liye banwani hai? WhatsApp Chat Bot + COD + Free Delivery + WhatsApp Ordering ke sath?</p>
+<a href="https://wa.me/923716649231?text=Salam%20Waqas%20Bhai!%20Mujhe%20Apni%20Shop%20Ke%20Liye%20AI%20Website%20Banwani%20Hai%20Rs.5000%20Me%20-%20LUXE%20Jaisi" style="background:#d4af37;color:#000;padding:14px 28px;text-decoration:none;font-weight:700;display:inline-block;border-radius:25px">WHATSAPP: 03716649231 - AI WEBSITE Rs.5000</a>
+</div>
+</div>
+
+<a class="float-wa" href="https://wa.me/923716649231?text=Salam!%20Luxe%20Boutique%20Se%20Order%20Karna%20Hai%20-%20https://waqas7283.github.io/-luxe-boutique-final/" target="_blank">💬 WhatsApp - 03716649231</a>
+
+<!-- AI CHAT BOT BUTTON -->
+<div id="ai-btn" onclick="toggleAI()">🤖 AI Help - Pucho Kuch Bhi</div>
+
+<!-- AI CHAT BOX -->
+<div id="ai-box">
+<div id="ai-header"><div>🤖 <b>LUXE AI Assistant</b> - <span>03716649231</span></div><div style="cursor:pointer" onclick="toggleAI()">✕</div></div>
+<div id="ai-messages">
+<div class="msg bot">Salam! 👋 Main LUXE Boutique ka AI Assistant hun.<br><br>Main aapki madad kar sakta hun:<br>✅ Price, Size, Delivery<br>✅ COD + Free Delivery info<br>✅ Order kaise karna hai<br><br>Pucho kuch bhi, ya neeche quick buttons dabao 👇</div>
+<div class="ai-quick">
+<span onclick="quickAsk('Price kya hai?')">Price?</span>
+<span onclick="quickAsk('COD available hai?')">COD?</span>
+<span onclick="quickAsk('Free Delivery hai?')">Free Delivery?</span>
+<span onclick="quickAsk('Size kya hai?')">Size?</span>
+<span onclick="quickAsk('Order kaise karun?')">Order Kaise?</span>
+</div>
+</div>
+<div id="ai-input">
+<input type="text" id="ai-text" placeholder="Kuch bhi pucho... Price? COD? Delivery?" onkeypress="if(event.key==='Enter')sendAI()">
+<button onclick="sendAI()">Send</button>
+</div>
+</div>
+
 <script>
-function toggleChat(){const box=document.getElementById('chat-box');box.style.display=box.style.display==='flex'?'none':'flex';}
-const replies={"abaya":"Black Royal Abaya Rs.18,500 me hai, premium georgette with gold embroidery, S to XXL sizes available.","lehenga":"Golden Bridal Lehenga Rs.65,000 - pure bridal wear, heavy zari work, customized stitching available.","saree":"Beige Silk Saree Rs.22,000 - pure silk with subtle embroidery, wedding & party wear ke liye perfect.","gown":"Midnight Black Gown Rs.28,500 - velvet & lace evening gown, party aur formal events ke liye best.","gold":"Royal Gold Ensemble Rs.75,000 - hamara sab se shahi collection, hand embroidered with pearls.","kurta":"Champagne Kurta Set Rs.16,500 - festive kurta with trousers, daily & Eid wear.","price":"Hamari prices Rs.16,500 se Rs.75,000 tak hain. Har dress premium quality ki hai.","delivery":"Pakistan bhar me 3-4 din me delivery. Karachi me same day. Cash on Delivery available.","size":"S, M, L, XL, XXL sab sizes available. Custom size bhi ban jayega.","material":"Silk, Velvet, Georgette, Net - sab premium imported fabrics hain.","contact":"WhatsApp: 03XX-XXXXXXX | Instagram: @luxe.boutique | Email: luxe@gmail.com","default":"JazakAllah sawal ka! Hamari 6 premium dresses available hain: Abaya, Lehenga, Saree, Gown, Gold Ensemble, Kurta Set. Kisi specific dress ke baare me poochein!"};
-function getBotReply(q){q=q.toLowerCase();for(let k in replies){if(q.includes(k)) return replies[k];}if(q.includes("salam")||q.includes("hello")||q.includes("hi")) return "Walaikum Salam! Luxe Boutique me khush amdeed! Kaise madad kar sakti hun? 😊";if(q.includes("kitne")||q.includes("price")||q.includes("rate")) return replies.price;if(q.includes("deliver")||q.includes("cod")) return replies.delivery;if(q.includes("size")) return replies.size;if(q.includes("kapra")||q.includes("fabric")) return replies.material;return replies.default;}
-function sendMsg(){const input=document.getElementById('userInput');const text=input.value.trim();if(!text) return;const msgs=document.getElementById('chat-messages');msgs.innerHTML+=`<div class="msg user">${text}</div>`;input.value='';setTimeout(()=>{const reply=getBotReply(text);msgs.innerHTML+=`<div class="msg bot">${reply}</div>`;msgs.scrollTop=msgs.scrollHeight;},600);msgs.scrollTop=msgs.scrollHeight;}
+function toggleAI(){
+ let box=document.getElementById('ai-box');
+ box.style.display=box.style.display==='flex'?'none':'flex';
+ box.style.display=box.style.display===''? 'flex' : box.style.display;
+}
+function quickAsk(q){
+ document.getElementById('ai-text').value=q;
+ sendAI();
+}
+function sendAI(){
+ let input=document.getElementById('ai-text');
+ let text=input.value.trim();
+ if(!text) return;
+ let msgs=document.getElementById('ai-messages');
+ msgs.innerHTML+=`<div class="msg user">${text}</div>`;
+ input.value='';
+ 
+ setTimeout(()=>{
+  let lower=text.toLowerCase();
+  let reply='';
+  if(lower.includes('price')||lower.includes('rate')||lower.includes('kitne')){
+   reply='💰 Prices:<br>• Kurta Rs.3499<br>• Gold Sherwani Rs.12500<br>• Gown Rs.5999<br>• Saree Rs.4499<br>• Lehenga Rs.18500<br>• Abaya Rs.4999<br><br>🚚 FREE DELIVERY + 💵 COD - 03716649231<br><a href="https://wa.me/923716649231?text=Order%20karna%20hai" style="color:#d4af37">WhatsApp pe order karo 👉 03716649231</a>';
+  } else if(lower.includes('cod')||lower.includes('cash')){
+   reply='✅ JI HAAN! CASH ON DELIVERY AVAILABLE HAI! 💵<br><br>• Pure Pakistan me COD<br>• Ghar aane pe paise dena<br>• Koi advance nahi<br>• Call: 03716649231<br><br>Order ke liye WhatsApp karo: 03716649231';
+  } else if(lower.includes('delivery')||lower.includes('free')){
+   reply='🚚 FREE DELIVERY ALL PAKISTAN!<br><br>• Lahore: Same Day / 24 Hours<br>• Other Cities: 2-3 Days<br>• 100% FREE - Koi charge nahi<br>• COD ke sath<br><br>📞 03716649231';
+  } else if(lower.includes('size')||lower.includes('sाइज')){
+   reply='📏 Sizes Available:<br>• Small, Medium, Large, XL<br>• Custom size bhi ban jayega<br>• Kurta: All sizes<br>• Sherwani: 36 to 46<br>• Abaya: Free Size<br><br>Size ke liye WhatsApp karo: 03716649231';
+  } else if(lower.includes('order')||lower.includes('buy')||lower.includes('kharid')){
+   reply='🛒 ORDER KAISE KARNA HAI:<br><br>1️⃣ Product pe "BUY ON WHATSAPP" dabao<br>2️⃣ WhatsApp khulega 03716649231 pe<br>3️⃣ Address bhejo<br>4️⃣ COD pe ghar ayega<br><br>Ya direct WhatsApp karo: <a href="https://wa.me/923716649231" style="color:#25D366;font-weight:bold">03716649231 👉 Click Here</a>';
+  } else {
+   reply='🤖 Main samajh gaya! LUXE Boutique me:<br><br>✅ FREE DELIVERY All Pakistan<br>✅ CASH ON DELIVERY<br>✅ 6 Premium Designs<br>✅ AI Support 24/7<br><br>📞 Call/WhatsApp: 03716649231<br><br>Aap <b>WhatsApp Button</b> dabake direct order kar sakte hain ya mujhse price, size, delivery puch sakte hain!';
+  }
+  msgs.innerHTML+=`<div class="msg bot">${reply}</div>`;
+  msgs.scrollTop=msgs.scrollHeight;
+ },600);
+ msgs.scrollTop=msgs.scrollHeight;
+}
 </script>
+
 </body>
-</html>
+  </html>
